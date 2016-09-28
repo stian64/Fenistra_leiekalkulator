@@ -9,6 +9,6 @@ Beregningene er lagt i en model, jeg var litt usikker på om det ble riktig sted
 
 Jeg brukte en ajax get metode for å sende og returnere all data. Valgte dette istedenfor mange ajax requests , blant annet fordi instancen av controlleren ikke vil holde til neste call og dermed må mye data gjentas inn og, LoadDefaultValues metoden ville ikke gitt så mye mening.
 
-bootstrap er i bruk for utseendet og input er lagret over tid via cookies.
+bootstrap er i bruk for utseendet og input er lagret over tid via localstorage.
 
 grunnet liten tid fikk jeg ikke inn noe arbeid på browser spesifiserte forskjeller. Men jeg ville brukt conditional statements for å gi ulike css filer iforhold til browseren brukeren har og Modernizr til hjelp.
