@@ -1,0 +1,88 @@
+﻿<h2> Data</h2>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">  Areal m2 </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="text" class="form-control" ng-model="$ctrl.areal" ng-change="$ctrl.beregn();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> Grunnleie 'as is' m2 </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="text" class="form-control" ng-model="$ctrl.grunnleie" ng-change="$ctrl.beregn();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">  Terminer pr. år </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="text" class="form-control" ng-model="$ctrl.terminer" ng-change="$ctrl.beregn();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">  Leietakertilpasning </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="text" class="form-control" ng-model="$ctrl.leietakertilpasning" ng-change="$ctrl.beregn();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Teknisk oppgradering</div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="text" class="form-control" ng-model="$ctrl.teknisk_oppgradering" ng-change="$ctrl.beregn();" ng-minlength="1" required/>
+    </div>
+</div>
+
+<h2> Beregninger</h2>
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-8"> Realrente</div>
+  <div class="col-xs-6 col-md-4"> {{$ctrl.Realrente}}</div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8"> Total leie pr.år </div>
+    <div class="col-xs-6 col-md-4"> {{$ctrl.TotalLeiePerAr}} </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8"> Total leie pr.m2  </div>
+    <div class="col-xs-6 col-md-4">  {{$ctrl.TotalLeiePerM2}}</div>
+</div>
+
+<h3> Tilleggskost grunnet påkostning </h3>
+
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  Ann.faktor </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  Leie pr.år  </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  Leie pr.m2</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  LT  {{$ctrl.LTAnnFaktor}} </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.LTLeiePerAr}} </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.LTLeiePerM2}} </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> TO {{$ctrl.ToAnnFaktor}}</div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.TOLeiePerAr}}  </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.TOLeiePerM2}}  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">    Total  </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.TilleggKostnLeiePrAarTotalt}}</div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.TilleggKostnLeiePrKvmTotalt}}</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"> Oppussing total</div>  
+    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4"></div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> {{$ctrl.Oppusingtotal}}</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4"></div>
+    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">   LT = Leietaker tilpasning </div>
+    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4"></div>
+    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">   TO = Teknisk oppgradering </div>
+    <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4"></div>
+</div>

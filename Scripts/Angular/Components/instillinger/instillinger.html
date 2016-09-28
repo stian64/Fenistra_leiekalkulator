@@ -1,0 +1,28 @@
+﻿
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6"> Avkastningskrav i % </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6">
+        <input type="text" ng-model="$ctrl.avkastningskrav" ng-change="$ctrl.leggtil();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">  Inflasjon i % </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6">
+        <input type="text"  ng-model="$ctrl.inflasjon" ng-change="$ctrl.leggtil();" ng-minlength="1" required/>
+    </div>
+</div>
+
+<h3> Avkastningstid i år</h3>
+
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6"> Leietakertilpasning avskrives over antall år </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6">
+        <input type="text" ng-model="$ctrl.LTAvskrivningsTid" ng-change="$ctrl.leggtil();" ng-minlength="1" required/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">  Teknisk oppgradering avskrives over antall år </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6">
+        <input type="text"  ng-model="$ctrl.TOAvskrivningsTid" ng-change="$ctrl.leggtil();" ng-minlength="1" required/>
+    </div>
+</div>
