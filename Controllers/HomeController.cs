@@ -21,6 +21,8 @@ namespace Fenistra.Controllers
 
         public ActionResult Informasjon()
         {
+
+            var x = 2;
             return View();
         }
 
