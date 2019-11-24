@@ -1,7 +1,7 @@
 # Fenistra_leiekalkulator
 
 
-Jeg tenkte først å lage dette i Angular 2, som jeg akuratt har begynt å lære , men grunnet liten tid valgte jeg å bruke Angular 1.5 som jeg forsåvidt ikke har brukt før eller. Men det er nærmere syntax jeg er vant med og Webcomponeneter er utgitt i den.
+Jeg tenkte først å lage dette i Angular 2, som jeg akuratt har begynt å lære , men grunnet liten tid valgte jeg å bruke Angular 1.5 som jeg forsåvidt ikke har brukt før heller. Men det er nærmere syntax jeg er vant med og Webcomponeneter er utgitt i den.
 
 Grunnet Tidsbegrensninger har jeg valgt å gjøre http request via jquery direkte fra beregnings komponenten. Jeg ville heller ha laget en service factory for http requestene så koden i komponentene er renener,så den har mindre ansvar og at http requesten da kan gjenbrukes i andre komponenter om de oppstår behov.
 
